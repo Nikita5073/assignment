@@ -1,0 +1,320 @@
+1.question:-
+#include <stdio.h>
+int add(int a,int b,int c,int d);
+int main() 
+{
+    int a = 10, b = 20, c = 30, d = 40;
+    int sum = a+b+c+d;
+    printf("%d",sum);
+    return 0;
+}
+int add(int a, int b, int c, int d) 
+{
+    int sum = a+b+c+d;
+    return sum;
+}
+--------------------------------------------------------------
+2.question:-
+#include<stdio.h>
+int add(int a,int b);
+int main()
+{
+	int c=(20+20);
+	printf("%d",c);
+	return 0;
+}
+int add(int a,int b)
+{
+	int c=a+b;
+	return c;
+}
+-----------------------------------------------------------------------
+3.question:-
+#include<stdio.h>
+int sub(int a,int b);
+int main()
+{
+	int c=(30-20);
+	printf("%d",c);
+	return 0;
+}
+int sub(int a,int b)
+{
+	int c=a-b;
+	return c;
+}
+----------------------------------------------------------------------------
+4.question:-
+#include<stdio.h>
+int multi(int a,int b);
+int main()
+{
+	int c=(10*10);
+	printf("%d",c);
+	return 0;
+}
+int multi(int a,int b)
+{
+	int c=a*b;
+	return c;
+}
+----------------------------------------------------------------------------------
+5.question:-
+#include<stdio.h>
+int div(int a,int b);
+int main()
+{
+	int c=(300/2);
+	printf("%d",c);
+	return 0;
+}
+int div(int a,int b)
+{
+	int c=a/b;
+	return c;
+}
+------------------------------------------------------------------------------
+6.question:-
+#include<stdio.h>
+int mod(int a,int b);
+int main()
+{
+	int c=(300%2);
+	printf("%d",c);
+	return 0;
+}
+int mod(int a,int b)
+{
+	int c=a%b;
+	return c;
+}
+----------------------------------------------------------------------------
+7.question:-
+#include<stdio.h>
+int voter(int age);
+int main()
+{
+	int age;
+	printf("enter your age");
+	scanf("%d",&age);
+	{
+		if(age>18)
+		{
+			printf("valid");
+		}
+		else {
+			printf("not valid");
+		}
+	}
+	return 0;
+}
+int voter(int age)
+{
+	if(age>18)
+	{
+		
+	}
+	else {
+		
+    }
+	return age;   
+}
+--------------------------------------------------------------------------------------------
+8.question:-
+#include<stdio.h>
+int num(int even,int odd);
+int main()
+{
+	int n;
+	printf("enter the number");
+	scanf("%d",&n);
+	{
+		if(n%2==0)
+		{
+			printf("even number");
+		}
+		else {
+			printf("odd number");
+		}
+	}
+	return 0;
+}
+int num(int even,int odd)
+
+{   int n;
+	if(n%2==0)
+	{
+		
+	}
+	else {
+		
+    }
+	return n;   
+}
+------------------------------------------------------------------------------------
+9.question:-
+#include <stdio.h>
+int reverseNumber(int num);
+int main() 
+{
+    int num,sum;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    sum = reverseNumber(num);
+    printf("sum: %d\n", sum);
+    return 0;
+}
+int reverseNumber(int num) 
+{
+    int sum = 0;
+    while (num != 0) 
+    {
+        int rem = num % 10;
+        sum = sum * 10 + rem;
+        num /= 10;
+    }
+    
+    return sum;
+}
+
+---------------------------------------------------------------------------------------------------
+10.question:-
+#include<stdio.h>
+void add();
+int main()
+{
+    add();
+    return 0;
+}
+void add()
+{
+    int a=20,b=20,c;
+    c=a+b;
+    printf("%d",c);
+}
+---------------------------------------------------------------------
+11.question:-
+#include<stdio.h>
+void multi();
+int main()
+{
+    multi();
+    return 0;
+}
+void multi()
+{
+    int a=2,b=40,c;
+    c=a*b;
+    printf("%d",c);
+}
+-------------------------------------------------------------------------
+12.question:-
+#include<stdio.h>
+void div();
+int main()
+{
+    div();
+    return 0;
+}
+void div()
+{
+    int a=200,b=4,c;
+    c=a/b;
+    printf("%d",c);
+}
+-------------------------------------------------------------------------------
+13.question:-
+#include<stdio.h>
+void mod();
+int main()
+{
+    mod();
+    return 0;
+}
+void mod()
+{
+    int a=360,b=2,c;
+    c=a%b;
+    printf("%d",c);
+}
+--------------------------------------------------------------------------
+14.question:-
+#include<stdio.h>
+void sub();
+int main()
+{
+    sub();
+    return 0;
+}
+void sub()
+{
+    int a=500,b=200,c;
+    c=a-b;
+    printf("%d",c);
+}
+----------------------------------------------------------------------
+15.question:-
+#include<stdio.h>
+void show1();
+int main()
+{
+    show1();
+    return 0;
+}
+void show1()
+{
+    printf("hello\n");
+}
+--------------------------------------------------------------------
+16.question:-
+#include<stdio.h>
+void show2();
+int main()
+{
+    show2();
+    return 0;
+}
+void show2()
+{
+    printf("hii\n");
+}
+-------------------------------------------------------------------------------
+17.question:-
+#include<stdio.h>
+void show3();
+int main()
+{
+    show3();
+    return 0;
+}
+void show3()
+{
+    printf("how are you\n");
+}
+-------------------------------------------------------------------------------------
+18.question:-
+#include<stdio.h>
+void show4();
+int main()
+{
+    show4();
+    return 0;
+}
+void show4()
+{
+    printf("bye\n");
+}
+-----------------------------------------------------------------------------------
+19.question:-
+#include<stdio.h>
+void show5();
+int main()
+{
+    show5();
+    return 0;
+}
+void show5()
+{
+    printf("what\n");
+}
+----------------------------------------------------------------------------
