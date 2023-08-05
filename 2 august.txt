@@ -1,0 +1,249 @@
+1.question:-
+#include<iostream>
+using namespace std;
+class rectangle
+{
+	private:
+			int length;
+			int width;
+			int area;
+			int perimeter;
+	public:
+	    rectangle(int l,int w)
+		{
+			length=l;
+			width=w;
+		}
+		void areafxn()
+		{
+			area=length*width;
+		}
+		void perimeterfxn()
+		{
+			perimeter=2*length+width;
+		}
+		void displayinfo()
+		{
+			cout<<length<<" "<<width;
+			cout<<"\n"<<"area is: "<<area;
+			cout<<"\n"<<"perimeter is: "<<perimeter;
+		}
+};
+int main()
+{
+	rectangle r1(4,10);
+	r1.areafxn();
+	r1.perimeterfxn();
+	r1.displayinfo();
+}
+--------------------------------------------------------------------------------
+2.question:-
+#include<iostream>
+using namespace std;
+class calculator
+{
+	private:
+			int a;
+			int b;
+	public:
+	int add()
+	{
+		return a+b;
+	}
+	int sub()
+	{
+		return a-b;
+	}
+	int multi()
+	{
+		return a*b;
+	}
+	int div()
+	{
+		return a/b;
+	}
+	void getdetails()
+	{
+		cin>>a;
+		cin>>b;
+	}
+	void displayinfo()
+	{
+		cout<<"\n"<<"addition is: "<<add();
+		cout<<"\n"<<"subtraction is: "<<sub();
+		cout<<"\n"<<"multiply is: "<<multi();
+		cout<<"\n"<<"divide is: "<<div();
+	}
+};
+int main()
+{
+	calculator c1;
+	c1.getdetails();
+	c1.displayinfo();
+}
+----------------------------------------------------------------------------------------
+3.question:-
+#include<iostream>
+using namespace std;
+class time
+{
+	private:
+		float hours;
+		float minutes;
+	public:
+	time()
+	{
+		hours=6;
+		minutes=25;
+	}
+	time(float h,float m)
+	{
+		hours=h;
+		minutes=m;
+	}
+	void displaytime()
+	{
+		cout<<"\n"<<"hours is: "<<hours;
+		cout<<"\n"<<"minutes is: "<<minutes;
+	}	
+};
+int main()
+{
+	time t1;
+	t1.displaytime();
+	time t2(3,20);
+	t2.displaytime();
+	
+}
+---------------------------------------------------------------------------------------
+4.question:-
+#include<iostream>
+using namespace std;
+class car
+{
+	private:
+		string make;
+		string model;
+		int yearofmfc;
+	public:
+	car()
+	{
+		make="mahindra";
+		model="xuv700";
+		yearofmfc=2022;
+	}
+	car(string m,string o,int y)
+	{
+		make=m;
+		model=o;
+		yearofmfc=y;
+	}
+	void displayinfo()
+	{
+		cout<<"\n"<<"make is: "<<make;
+		cout<<"\n"<<"model is: "<<model;
+		cout<<"\n"<<"year of manufacture is: "<<yearofmfc;
+	}	
+};
+int main()
+{
+	car c1;
+	c1.displayinfo();
+	car c2("maruti","swift",2021);
+	c2.displayinfo();
+}
+-----------------------------------------------------------------------------------------
+5.question:-
+#include<iostream>
+using namespace std;
+class student
+{
+	private:
+		string name;
+		int roll_no;
+		int dob;
+		string gender;
+		int sub1_marks;
+		int sub2_marks;
+		int sub3_marks;
+	public:
+	student()
+	{
+		name="nikita";
+		roll_no=10;
+		dob=19;
+		gender="female";
+		sub1_marks=90;
+		sub2_marks=85;
+		sub3_marks=95;
+	}
+	student(string n,int r,int d, string g,int s1, int s2, int s3)
+	{
+		name=n;
+		roll_no=r;
+		dob=d;
+		gender=g;
+		sub1_marks=s1;
+		sub2_marks=s2;
+		sub3_marks=s3;
+	}
+	void getdetails()
+	{
+		cout<<"\n"<<"name is: "<<name;
+		cout<<"\n"<<"roll number is: "<<roll_no;
+		cout<<"\n"<<"dob is: "<<dob;
+		cout<<"\n"<<"gender is: "<<gender;
+	}
+	void avgmarks()
+	{
+		int sum=sub1_marks+sub2_marks+sub3_marks;
+		cout<<"\n"<<"avg is: "<<sum/3;
+	}	
+};
+int main()
+{
+	student s1;
+	s1.getdetails();
+	s1.avgmarks();
+	student s2("vishal",20,4,"male",80,85,75);
+	s2.getdetails();
+	s2.avgmarks();
+}
+-------------------------------------------------------------------------------------------------------
+6.question:-
+#include<iostream>
+using namespace std;
+class book
+{
+	private:
+		string title;
+		string author;
+		int p_year;
+	public:
+	book()
+	{
+		title="x";
+		author="y";
+		p_year=2022;
+	}
+	book(string t,string a,int y)
+	{
+		title=t;
+		author=a;
+		p_year=y;
+	}
+	void getdetails()
+	{
+		cout<<"\n"<<"title is: "<<title;
+		cout<<"\n"<<"author is: "<<author;
+		cout<<"\n"<<"publication year is: "<<p_year; 
+	}	
+};
+int main()
+{
+	book b1;
+	b1.getdetails();
+	book b2("abc","defg",2020);
+	b2.getdetails();
+}
+------------------------------------------------------------------------------------
