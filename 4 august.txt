@@ -1,0 +1,302 @@
+1.question:-
+#include<iostream>
+using namespace std;
+class person
+{
+	private:
+		string name;
+		int age;
+	public:
+		person(string n,int a)
+		{
+			name=n;
+			age=a;
+		}
+		void getdetails()
+		{
+			cout<<"\n"<<"name is: "<<name;
+			cout<<"\n"<<"age is: "<<age;
+		}
+};
+int main()
+{
+	person p1("nikita",22);
+	p1.getdetails();
+	person p2("vishal",22);
+	p2.getdetails();
+}
+-------------------------------------------------------------------------------
+2.question:-
+#include<iostream>
+using namespace std;
+class bankaccount
+{
+	private:
+		string holdername;
+		int acc_number;
+		int balance;
+	public:
+		bankaccount(string n,int a,int b)
+		{
+			holdername=n;
+			acc_number=a;
+			balance=b;
+		}
+		void getdetails()
+		{
+			cout<<"\n"<<"name is: "<<holdername;
+			cout<<"\n"<<"account number is: "<<acc_number;
+			cout<<"\n"<<"balance is: "<<balance;
+		}
+};
+int main()
+{
+	bankaccount b1("nikita",34567890,100000);
+	b1.getdetails();
+}
+--------------------------------------------------------------------------------------
+3.question:-
+#include<iostream>
+using namespace std;
+class rectangle
+{
+	private:
+		int length;
+		int width;
+		int area;
+	public:
+		rectangle(int l,int w)
+		{
+			length=l;
+			width=w;
+		}
+		void areafxn()
+		{
+			area=length*width;
+		}
+		void getdetails()
+		{
+			cout<<length<<" "<<width;
+			cout<<"\n"<<"area is: "<<area;
+		}
+};
+int main()
+{
+	rectangle r1(20,5);
+	r1.areafxn();
+	r1.getdetails();
+}
+---------------------------------------------------------------------
+4.question:-
+#include<iostream>
+using namespace std;
+class car
+{
+	private:
+		string make;
+		string model;
+		int year;
+	public:
+		car(string m,string o,int y)
+		{
+			make=m;
+			model=o;
+			year=y;
+		}
+		void getdetails()
+		{
+			cout<<"\n"<<"make is: "<<make;
+			cout<<"\n"<<"model is: "<<model;
+			cout<<"\n"<<"year is: "<<year;
+		}
+};
+int main()
+{
+	car c1("toyota","fortuner",2022);
+	c1.getdetails();
+}
+-------------------------------------------------------------------------
+5.question:-
+#include<iostream>
+using namespace std;
+class circle
+{
+	private:
+		float radius;
+		float circumference;
+	public:
+	circle(float r)
+	{
+		radius=r;
+	}
+	void circumferencefxn()
+	{
+		circumference=2*3.14*radius;
+	}
+	void displayinfo()
+	{
+		cout<<"radius is: "<<radius;
+		cout<<"\n"<<"circumference is: "<<circumference;
+	}
+};
+int main()
+{
+	circle c1(20);
+	c1.circumferencefxn();
+	c1.displayinfo();
+}
+---------------------------------------------------------------------------------------
+6.question:-
+#include<iostream>
+using namespace std;
+class employee
+{
+	private:
+        string name;
+        int id;
+        int salary;
+	public:
+	employee(string n,int i,int s)
+	{
+		name=n;
+		id=i;
+		salary=s;
+	}
+	void displayinfo()
+	{
+		cout<<"\n"<<"name is: "<<name;
+		cout<<"\n"<<"id is: "<<id;
+		cout<<"\n"<<"salary is: "<<salary;
+	}
+};
+int main()
+{
+	employee e1("nikita",4702,25000);
+    e1.displayinfo();
+}
+------------------------------------------------------------------------------
+7.question:-
+#include<iostream>
+using namespace std;
+class student
+{
+	private:
+		string name;
+		int roll_no;
+		int sub1_marks;
+		int sub2_marks;
+		int sub3_marks;
+	public:
+	student(string n,int r,int s1, int s2, int s3)
+	{
+		name=n;
+		roll_no=r;
+		sub1_marks=s1;
+		sub2_marks=s2;
+		sub3_marks=s3;
+	}
+	void getdetails()
+	{
+		cout<<"\n"<<"name is: "<<name;
+		cout<<"\n"<<"roll number is: "<<roll_no;
+	}
+	void avgmarks()
+	{
+		int sum=sub1_marks+sub2_marks+sub3_marks;
+		cout<<"\n"<<"avg is: "<<sum/3;
+	}	
+};
+int main()
+{
+	student s2("vishal",20,80,85,75);
+	s2.getdetails();
+	s2.avgmarks();
+}
+----------------------------------------------------------------------------------
+8.question:-
+#include<iostream>
+using namespace std;
+class date
+{
+	private:
+		int day;
+		int month;
+		int year;
+    public:
+    	date(int d,int m,int y)
+    	{
+    		day=d;
+    		month=m;
+    		year=y;
+		}
+		void displayinfo()
+		{
+			cout << day << "-" << month << "-" << year << endl;
+		}
+};
+int main()
+{
+	date d1(6,12,2020);
+	d1.displayinfo();
+}
+-------------------------------------------------------------------------------------
+9.question:-
+#include<iostream>
+using namespace std;
+class book
+{
+	private:
+		string title;
+		string author;
+		int isbn;
+	public:
+	void inputfxn()
+	{
+		cin>>title;
+		cin>>author;
+		cin>>isbn;
+	}
+	void displayinfo()
+	{
+		cout<<"\n"<<"title is: "<<title;
+		cout<<"\n"<<"author is: "<<author;
+		cout<<"\n"<<"isbn is: "<<isbn;
+	}	
+};
+int main()
+{
+	book b1;
+	b1.inputfxn();
+	b1.displayinfo();
+}
+--------------------------------------------------------------------------------
+10.question:-
+#include <iostream>
+using namespace std;
+class Bank 
+{
+	private:
+        string bankname;
+    public:
+    	Bank(string n)
+    	{
+    		bankname=n;
+		}
+		void getdetails()
+		{
+			cout<<"\n"<<"bank is: "<<bankname;
+		}
+    	
+};
+
+int main() 
+{
+	Bank b1("ICICI");
+	b1.getdetails();
+	Bank b2("SBI bank");
+	b2.getdetails();
+	Bank b3("kotak bank");
+	b3.getdetails();
+	return 0;
+}
+---------------------------------------------------------
