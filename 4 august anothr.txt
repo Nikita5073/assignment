@@ -300,3 +300,233 @@ int main()
 	return 0;
 }
 ---------------------------------------------------------
+11.question:-
+#include<iostream>
+using namespace std;
+class rectangle
+{
+	int length;
+	int width;
+	int area;
+	
+	public:
+		rectangle(int l, int w)
+		{
+			length=l;
+			width=w;
+		}
+		void areafxn()
+		{
+			area=length*width;
+		}
+		void getdetails()
+		{
+			cin>>length;
+			cin>>width;
+		}
+		int is_square()
+		{
+			if(length==width)
+			{
+				cout<<"area is square"<<endl;
+			}
+			else
+			{
+				cout<<"area is not square"<<endl;
+			}
+		}
+		void displayinfo()
+		{
+			cout<<"\n"<<"area is:"<<area;
+		}
+};
+int main()
+{
+	rectangle r1(2,2);
+	r1.is_square();
+	r1.getdetails();
+	r1.areafxn();
+	r1.displayinfo();
+}
+---------------------------------------------------------------------------------------------------
+12.question:-
+#include<iostream>
+using namespace std;
+class Temperature
+{
+	private:
+		int celsius;
+		int fahrenheit;
+	public:
+	void getdetails()
+	{
+		cin>>celsius;
+	}
+	int temperature()
+	{
+		return ((celsius * 9/5)+32);
+	}
+	void displayinfo()
+	{
+		cout<<"\n"<<"tempersture in fahrenheit is:"<<temperature();
+	}	
+};
+int main()
+{
+	Temperature t1;
+	t1.getdetails();
+	t1.displayinfo();
+}
+---------------------------------------------------------------------------------------------------
+13.question:-
+#include<iostream>
+using namespace std;
+class country
+{
+	private:
+		string c_name;
+	public:
+	country(string c)
+	{
+		c_name=c;
+	}
+	void displayinfo()
+	{
+		cout<<"\n"<<"country name is: "<<c_name;
+	}	
+};
+int main()
+{
+	country c1("india");
+	country c2("japan");
+	country c3("china");
+	c1.displayinfo();
+	c2.displayinfo();
+	c3.displayinfo();
+}
+-------------------------------------------------------------------------------------
+14.question:-
+#include<iostream>
+using namespace std;
+class student
+{
+	private:
+		string name;
+		int rollno;
+	public:
+	student(string n,int r)
+	{
+		name=n;
+		rollno=r;
+	}
+	void displayinfo()
+	{
+		cout<<"\n"<<"name is:"<<name;
+		cout<<"\n"<<"rollno is:"<<rollno;
+	}	
+};
+int main()
+{
+	student s1("raj",24);
+	s1.displayinfo();
+}
+--------------------------------------------------------------------------------------------
+15.question:-
+#include<iostream>
+using namespace std;
+class BankAccount
+{
+	private:
+		int acc_number;
+		int balance;
+	public:
+	BankAccount(int a,int b)
+	{
+		acc_number=a;
+		balance=b;
+	}
+	void deposit(int amount)
+	{
+		if(amount>0)
+		{
+			balance += amount;
+			cout<<"\n"<<"deposited amount"<<endl;
+		}
+		else
+		{
+			cout<<"\n"<<"invalid deposit amount"<<endl;
+		}
+	
+	}
+	void displayinfo()
+	{
+		cout<<"\n"<<"acc_number is:"<<acc_number;
+		cout<<"\n"<<"balance is: "<<balance;
+	}	
+};
+int main()
+{
+	BankAccount b1(12345,1000);
+	b1.displayinfo();
+	b1.deposit(500);
+	b1.displayinfo();
+}
+-----------------------------------------------------------------------------------------
+16.question:-
+#include<iostream>
+using namespace std;
+class time
+{
+	private:
+		int hours;
+		int minutes;
+	public:
+	time(int h,int m)
+	{
+		hours=h;
+		minutes=m;
+	}
+	void displaytime()
+	{
+		cout<<"\n"<<hours<<"-"<<minutes;
+	}	
+};
+int main()
+{
+	time t1(3,50);
+	t1.displaytime();
+}
+------------------------------------------------------------------------------------------
+17.question:-
+#include<iostream>
+using namespace std;
+class circle
+{
+	private:
+		float radius;
+		float area;
+	public:
+	circle(float r)
+	{
+	radius=r;
+    }
+	void areafxn()
+	{
+	area=3.14*radius*radius;
+    }
+	void displayinfo()
+	{
+		cout<<"\n"<<"radius is:"<<radius;
+		cout<<"\n"<<"area is:"<<area;
+	}	
+};
+int main()
+{
+	circle c1(5);
+	c1.areafxn();
+	c1.displayinfo();
+}
+-----------------------------------------------------------------------------------------
+18.question:-
+
+
