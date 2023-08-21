@@ -1,0 +1,128 @@
+1.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    int add=a+b;
+    cout<<"the addition is :"<<add<<endl;
+    return 0;
+}
+-------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    int sub=a-b;
+    cout<<"the substraction is :"<<sub<<endl;
+    return 0;
+}
+-----------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    int modulus=a%b;
+    cout<<"the result is :"<<modulus<<endl;
+    return 0;
+}
+------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    int multi=a*b;
+    cout<<"the multiplication is :"<<multi<<endl;
+    return 0;
+}
+---------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    int div=a/b;
+    cout<<"the division is :"<<div<<endl;
+    return 0;
+}
+---------------------------------------------------------------------
+2.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int result;
+    result=((((3+4)*2)/2)-5);
+    cout<<"result is :"<<result;
+    return 0;
+}
+------------------------------------------------------------------------
+3.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d;
+    cin>>a>>b>>c;
+    d=a*b*c;
+    cout<<"multiplication is :"<<d<<endl;
+    return 0;
+}
+-----------------------------------------------------------------------
+4.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    float base,height,area;
+    cin>>base>>height;
+    area=(((0.5)*base)*height);
+    cout<<"area is :"<<area<<endl;
+    return 0;
+}
+------------------------------------------------------------------
+5.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    float I,pa,rate;
+    cin>>pa>>rate;
+    rate=rate/100;
+    I=pa+(1+rate);
+    cout<<"interest is :"<<I<<endl;
+    return 0;
+}
+-------------------------------------------------------------------
+6.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b;
+    c=(a*a+b*b);
+    cout<<"result is :"<<c<<endl;
+    return 0;
+}
+----------------------------------------------------------------------
+7.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    long a;
+    cin>>a;
+    cout<<"the enter number is :"<<a;
+    return 0;
+}
+------------------------------------------------------------------------
+
