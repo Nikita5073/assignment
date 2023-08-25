@@ -1,0 +1,84 @@
+1.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int sum=0;
+    for(int i=1;i<=n;i++)
+    {
+        if(i%2==0)
+        {
+            sum=sum+i;
+        }
+    }
+    cout<<sum<<" ";
+}
+--------------------------------------------------------------------------
+2.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int length,width,area;
+    cout<<"enter the length and width:\n";
+    cin>>length>>width;
+    area=length*width;
+    cout<<"area of rectangle is: "<<area<<endl;
+    return 0;
+}
+---------------------------------------------------------------------------
+3.question:-
+#include<iostream>
+using namespace std;
+int main() 
+{
+    int numpages;
+    cout<<"enter the pages \n";
+    cin>>numpages;
+    if(numpages%5==0)
+    {
+        cout<<"the book has a multiple of 5 pages:";
+    }
+    else {
+        cout<<"the book doesn't have a multiple of 5 pages:";
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------
+4.questiuon:-
+#include <iostream>
+using namespace std;
+int main() 
+{
+    float totalAmount, finalAmount, discount;
+    cout<<"enter the totalamount spend by vishal:\n";
+    cin>>totalAmount;
+    if (totalAmount >= 150) 
+    {
+        discount = totalAmount * 0.3;  // Applying 30% discount
+	finalAmount = totalAmount-discount;
+	cout<<"Total Amount: "<<totalAmount<<"Discount:"<<discount<<" Final Price: "<<finalAmount;
+    } 
+    else if (totalAmount >= 100) 
+    {
+        discount = totalAmount * 0.2;  // Applying 20% discount
+	finalAmount = totalAmount-discount;
+	cout<<"Total Amount: "<<totalAmount<<"Discount:"<<discount<<" Final Price: "<<finalAmount;
+    } 
+    else if (totalAmount >= 50) 
+    {
+        discount = totalAmount * 0.1;  // Applying 10% discount
+	finalAmount = totalAmount-discount;
+	cout<<"Total Amount: "<<totalAmount<<"Discount:"<<discount<<" Final Price: "<<finalAmount;
+    } 
+    else 
+    {
+        cout<<"Final Price: "<<totalAmount;  // No discount
+    }
+    
+    
+    return 0;
+}
+------------------------------------------------------------------------------------
