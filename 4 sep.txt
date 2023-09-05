@@ -1,0 +1,223 @@
+1.question:- by for loop and while loop:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+}
+---------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            if(j>=1 && j<=i)
+            cout<<"*";
+            else {
+                cout<<" ";
+            }
+        }
+        cout<<"\n";
+    }
+}
+-------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n)
+    {
+        int j=1;
+        while(j<=i)
+        {
+            cout<<"*";
+            j++;
+        }
+        cout<<"\n";
+        i++;
+    }
+}
+------------------------------------------------------------
+2.question:- by for loop and while loop:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=1;j<=n;j++)
+        {
+            if(j>=n-i+1 && j<=n)
+            cout<<"*";
+            else {
+                cout<<" ";
+            }
+        }
+        cout<<"\n";
+    }
+}
+------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    char k='A';
+    int n;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            cout<<k;
+            k++;
+        }
+        cout<<"\n";
+    }
+    
+}
+-----------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+   int n;
+   cin>>n;
+   char k='A';
+   for(int i=1;i<=n;i++)
+   {
+       for(int j=1;j<=n-i+1;j++)
+       {
+           cout<<k;
+       }
+       cout<<"\n";
+       k++;
+   }
+    
+}
+------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+   int n;
+   cin>>n;
+   for(int i=1;i<=n;i++)
+   {
+       char k='A'+n-i;
+       for(int j=1;j<=i;j++)
+       {
+           cout<<k;
+           k++;
+       }
+       cout<<"\n";
+   }
+    
+}
+------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+   int n;
+   cin>>n;
+   for(int i=1;i<=n;i++)
+   {
+       char k='A'+n-i;
+       for(int j=1;j<=i;j++)
+       {
+           cout<<k;
+           k++;
+       }
+       cout<<"\n";
+   }
+    
+}
+--------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++)
+	{
+		for(int j=1;j<=n;j++)
+		{
+			if(j>=n-i+1 && j<=n)
+			cout<<"*";
+			else 
+			cout<<" ";
+		}
+		cout<<"\n";
+	}
+	for(int i=1;i<=n;i++)
+	{
+		for(int j=1;j<=n;j++)
+		{
+			if(j>=i && j<=n)
+			cout<<"*";
+			else 
+			cout<<" ";
+		}
+		cout<<"\n";
+	}
+}
+-----------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++)
+	{
+		for(int j=1;j<=n;j++)
+		{
+			if(j>=i && j<=n)
+			cout<<"*";
+			else 
+			cout<<" ";
+		}
+		cout<<"\n";
+	}
+}
+----------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++)
+	{
+		for(int j=1;j<=n;j++)
+		{
+			if(j>=n-i+1 && j<=n)
+			cout<<"*";
+			else 
+			cout<<" ";
+		}
+		cout<<"\n";
+	}
+}
+---------------------------------------------------------------------
+
