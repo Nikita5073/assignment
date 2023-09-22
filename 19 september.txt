@@ -1,0 +1,362 @@
+1.question:-
+#include<bits/stdc++.h>
+using namespace std;
+void printbinary(int n)
+{
+    for(int i=31;i>=0;i--)
+    {
+        cout<<((n>>i)&1);
+    }
+    cout<<"\n";
+}
+int main()
+{
+    int n,i;
+    cin>>n>>i;
+    printbinary(n);
+    cout<<(n&(1<<i)-1);
+}
+------------------------------------------------------------
+2.question:-
+#include<bits/stdc++.h>
+using namespace std;
+void printbinary(int n)
+{
+    for(int i=31;i>=0;i--)
+    {
+        cout<<((n>>i)&1);
+    }
+    cout<<"\n";
+}
+int main()
+{
+    int n,i;
+    cin>>n>>i;
+    printbinary(n);
+    cout<<(n&(~(1<<i)-1));
+}
+----------------------------------------------------------------
+3.question:-
+#include<bits/stdc++.h>
+using namespace std;
+void printbinary(int n)
+{
+    for(int i=31;i>=0;i--)
+    {
+        cout<<((n>>i)&1);
+    }
+    cout<<"\n";
+}
+int main()
+{
+    int n,i;
+    cin>>n>>i;
+    printbinary(n);
+    int m=(n|(1<<i)-1);
+    printbinary(m);
+    cout<<m<<endl;
+}
+-------------------------------------------------------------------
+4.question:-
+#include<bits/stdc++.h>
+using namespace std;
+void printbinary(int n)
+{
+    for(int i=31;i>=0;i--)
+    {
+        cout<<((n>>i)&1);
+    }
+    cout<<"\n";
+}
+int main()
+{
+    char c;
+    cin>>c;
+    printbinary(c);
+    char m=char(c|(1<<5));
+    printbinary(m);
+    cout<<m;
+}
+------------------------------------------------------------------
+5.question:-
+#include<bits/stdc++.h>
+using namespace std;
+void printbinary(int n)
+{
+    for(int i=31;i>=0;i--)
+    {
+        cout<<((n>>i)&1);
+    }
+    cout<<"\n";
+}
+int main()
+{
+    char c;
+    cin>>c;
+    printbinary(c);
+    char m=char(c&(~(1<<5)));
+    printbinary(m);
+    cout<<m;
+}
+---------------------------------------------------------------
+6.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int xor1=0;
+    for(int i=0;i<n;i++)
+    {
+        xor1=xor1^arr[i];
+    }
+    cout<<xor1;
+}
+---------------------------------------------------------
+7.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int xor1=0;
+    for(int i=0;i<n;i++)
+    {
+        xor1=xor1^arr[i];
+    }
+    int xor2=0;
+    for(int i=1;i<=n+1;i++)
+    {
+        xor2=xor2^i;
+    }
+    cout<<(xor1^xor2);
+}
+----------------------------------------------------------------
+8.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int xor1=0;
+    for(int i=0;i<n;i++)
+    {
+        xor1=xor1^arr[i];
+    }
+    for(int i=1;i<=n-1;i++)
+    {
+        xor1=xor1^i;
+    }
+    cout<<xor1;
+}
+---------------------------------------------------------------------
+9.question:-
+//1,2,3,2,1,4 
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int xor1=0;
+    for(int i=0;i<n;i++)
+    {
+        xor1=xor1^arr[i];
+    }
+    int rsb=xor1&(-xor1);
+    int g1=0;
+    int g2=0;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]&rsb==1)
+        {
+            g1=g1^arr[i];
+        }
+        else if(arr[i]&rsb==0)
+        {
+            g2=g2^arr[i];
+        }
+    }
+    cout<<g1<<g2;
+}
+-------------------------------------------------------
+10.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int age[]={12,22,25,26,23,73};
+    int n=(sizeof(age)/sizeof(age[0]));
+    for(int i=0;i<n;i++)
+    {
+        cout<<age[i]<<" ";
+    }
+}
+---------------------------------------------------
+11.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    //int age[]={12,22,25,26,23,73};
+    char alphabet[]={'a','b','c','d'};
+    int n=(sizeof(alphabet)/sizeof(alphabet[0]));
+    for(int i=0;i<n;i++)
+    {
+        cout<<alphabet[i]<<" ";
+    }
+}
+---------------------------------------------------------
+12.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    //int age[]={12,22,25,26,23,73};
+    //char alphabet[]={'a','b','c','d'};
+    string names[]={"nikita","vishal"};
+    int n=(sizeof(names)/sizeof(names[0]));
+    for(int i=0;i<n;i++)
+    {
+        cout<<names[i]<<" ";
+    }
+}
+---------------------------------------------------
+13.question:-
+//deafault initialisation
+#include<iostream>
+using namespace std;
+int main()
+{
+    int age[4]={};
+    int n=(sizeof(age)/sizeof(age[0]));
+    for(int i=0;i<n;i++)
+    {
+        cout<<n<<" ";
+    }
+}
+-----------------------------------------------
+14.question:-
+//partial initialisation
+#include<iostream>
+using namespace std;
+int main()
+{
+    int age[4]={1,2};
+    int n=(sizeof(age)/sizeof(age[0]));
+    for(int i=0;i<n;i++)
+    {
+        cout<<age[i]<<" ";
+    }
+}
+----------------------------------------------------
+15.question:-
+//uniform initialisation
+#include<iostream>
+using namespace std;
+int main()
+{
+    int age[]={1,2,3,4,5,6};
+    int n=(sizeof(age)/sizeof(age[0]));
+    for(int i=0;i<n;i++)
+    {
+        cout<<age[i]<<" ";
+    }
+}
+-----------------------------------------------------------
+16.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int age[8]={45};
+    int n=(sizeof(age)/sizeof(age[0]));
+    for(int i=0;i<n;i++)
+    {
+        cout<<age[i]<<" ";
+    }
+}
+-----------------------------------------------------------
+17.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+}
+------------------------------------------------
+18.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    char alphabet[5]={'a','b','c','d','e'};
+    {
+        cout<<alphabet<<" ";
+    }
+}
+----------------------------------------------------------
+19.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    char alphabet[5]={'a','b','c','d','e'};
+    for(auto it:alphabet)
+    {
+        cout<<it<<" ";
+    }
+}
+--------------------------------------------------------------
+20.question:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    float plot[5]={2.5,5.5,3.5};
+    for(int i=0;i<5;i++)
+    {
+        cout<<plot[i]<<" ";
+    }
+}
+--------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+   int arr[5]={1,2,3,4,5};
+    for(auto it:arr)
+    {
+        cout<<it<<" ";
+    }
+}
+
