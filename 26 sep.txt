@@ -1,0 +1,152 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,m;
+    cin>>n>>m;;
+    int arr[n][m];
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<m;j++)
+        {
+            cin>>arr[i][j];
+        }
+    }
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<m;j++)
+        {
+            cout<<arr[i][j];
+        }
+        cout<<"\n";
+    }
+}
+-------------------------------------------------------
+//direct initialisation:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int arr[3][4]={{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+    
+    for(int i=0;i<3;i++)
+    {
+        for(int j=0;j<4;j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<"\n";
+    }
+}
+------------------------------------------------------------
+//partial initialisation:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int arr[4][2]={{1,2},{5,6}};
+    
+    for(int i=0;i<4;i++)
+    {
+        for(int j=0;j<2;j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<"\n";
+    }
+}
+------------------------------------------------------------------
+//fixed size:-
+#include<iostream>
+using namespace std;
+int main()
+{
+    const int row=2;
+    const int col=3;
+    int arr[row][col]={{1,2,3},{}};
+    for(int i=0;i<2;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<"\n";
+    }
+}
+--------------------------------------------------------------------------
+//vector initialisation:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   vector<int>numbers{1,2,3,4,5,6,7,8,9};
+   for(auto it:numbers)
+   {
+       cout<<it<<" ";
+   }
+   cout<<"\n";
+}
+-----------------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   vector<int>vec;
+   int num;
+   for(int i=0;i<9;i++)
+   {
+       cin>>num;
+       vec.push_back(num);
+   }
+}
+-----------------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   vector<int>vec(5);
+   for(int i=0;i<5;i++)
+   {
+       cin>>vec[i];
+   }
+}
+-------------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   vector<vector<int>>matrix={{1,2,3},{4,5,6}};
+   for(auto it:matrix)
+   {
+       for(auto data:it)
+       {
+           cout<<data<<" ";
+       }
+       cout<<"\n";
+   }
+}
+-------------------------------------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int row,col;
+    cin>>row>>col;
+   vector<vector<int>>matrix(row,vector<int>(col));
+   for(int i=0;i<row;i++)
+   {
+       for(int j=0;j<col;j++)
+       {
+           cin>>matrix[i][j];
+       }
+   }
+   for(int i=0;i<row;i++)
+   {
+       for(int j=0;j<col;j++)
+       {
+           cout<<matrix[i][j]<<" ";
+       }
+       cout<<"\n";
+   }
+}
+-----------------------------------------------------------------------
