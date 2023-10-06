@@ -1,0 +1,280 @@
+//linear search function:-
+//linear search
+#include<bits/stdc++.h>
+using namespace std;
+void linearsearch(int arr[],int n,int key,int index)
+{
+    int flag=-1;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]==key)
+        {
+            flag=1;
+            index=i;
+            break;
+        }
+    }
+    if(flag==1)
+    {
+        cout<<"element found at position"<<index<<" ";
+    }
+    else {
+        cout<<"element not found"<<" ";
+    }
+}
+int main()
+{
+    int arr[]={15,20,35,32,45,95,55};
+    int n=(sizeof(arr)/sizeof(arr[0]));
+    int key=45,index=-1;
+    linearsearch(arr,n,key,index);
+    
+}
+-------------------------------------------------------------------------------
+//binarysearch function:-
+//binary search
+#include<bits/stdc++.h>
+using namespace std;
+void binarysearch(int arr[],int n,int key,int index,int start,int end)
+{
+    int flag=-1;
+    while(start<=end)
+    {
+        int mid=(start+end)/2;
+        if(arr[mid]==key)
+        {
+            flag=1;
+            index=mid;
+            break;
+        }
+        else if(arr[mid]>key)
+        {
+            end=mid-1;
+        }
+        else {
+            start=mid+1;
+        }
+    }
+    if(flag==1)
+    {
+        cout<<"element found at position"<<index<<" ";
+    }
+    else {
+        cout<<"element not found"<<" ";
+    }
+}
+int main()
+{
+    int arr[]={15,20,25,45,35,65,75};
+    int n=(sizeof(arr)/sizeof(arr[0]));
+    int key=45,index=-1,start=0,end=n;
+    binarysearch(arr,n,key,index,start,end);
+    
+}
+------------------------------------------------------------------------
+//selection_sort:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int arr[]={99,85,65,75,55,35,45};
+    int n=(sizeof(arr)/sizeof(arr[0]));
+    int minIndex;
+    for(int i=0;i<n;i++)
+    {
+        minIndex=i;
+        for(int j=i+1;j<n;j++)
+        {
+            if(arr[j]<arr[minIndex])
+            {
+                minIndex=j;
+            }
+        }
+        swap(arr[i],arr[minIndex]);
+    }
+    for(auto it:arr)
+    {
+        cout<<it<<" ";
+    }
+}
+-------------------------------------------------------------------------------
+//selection sort by function:-
+#include<bits/stdc++.h>
+using namespace std;
+void selection_sort(int arr[],int n)
+{
+    int minIndex;
+    for(int i=0;i<n;i++)
+    {
+        minIndex=i;
+        for(int j=i+1;j<n;j++)
+        {
+            if(arr[j]<arr[minIndex])
+            {
+                minIndex=j;
+            }
+        }
+        swap(arr[i],arr[minIndex]);
+    }
+    for(int i=0;i<n;i++)
+        {
+            cout<<arr[i]<<" ";
+        }
+}
+int main()
+{
+    int arr[]={99,20,35,65,88,55,65};
+    int n=(sizeof(arr)/sizeof(arr[0]));
+    selection_sort(arr,n);
+}
+----------------------------------------------------------------------------------
+//bubble sort:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int arr[]={99,15,27,101,56,12,19,71,89};
+    int n=(sizeof(arr)/sizeof(arr[0]));
+    for(int i=0;i<n-1;i++)
+    {
+        for(int j=0;j<n-1-i;j++)
+        {
+            if(arr[j]>arr[j+1])
+            {
+                swap(arr[j],arr[j+1]);
+            }
+        }
+    }
+    
+    for(auto it:arr)
+    {
+        cout<<it<<" ";
+    }
+}
+--------------------------------------------------------------------------
+//bubble sort by function:-
+#include<bits/stdc++.h>
+using namespace std;
+void bubble_sort(int arr[],int n)
+{
+    for(int i=0;i<n-1;i++)
+    {
+        for(int j=0;j<n-1-i;j++)
+        {
+            if(arr[j]>arr[j+1])
+            {
+                swap(arr[j],arr[j+1]);
+            }
+        }
+    }
+    for(int i=0;i<n;i++)
+        {
+            cout<<arr[i]<<" ";
+        }
+}
+int main()
+{
+    int arr[]={99,15,27,101,45,65,75,85,35};
+    int n=(sizeof(arr)/sizeof(arr[0]));
+    bubble_sort(arr,n);
+}
+----------------------------------------------------------------------
+//insertion sort:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int arr[]={2,9,5,1,3};
+    int n=(sizeof(arr)/sizeof(arr[0]));
+    for(int i=1;i<n;i++)
+    {
+        for(int j=i-1;j>=0;j--)
+        {
+            if(arr[j]>arr[j+1])
+            {
+                swap(arr[j],arr[j+1]);
+            }
+        }
+        for(auto it:arr)
+    {
+        cout<<it<<" ";
+    }
+    cout<<"\n";
+    }
+    
+    for(auto it:arr)
+    {
+        cout<<it<<" ";
+    }
+}
+//insertion sort by function:-
+#include<bits/stdc++.h>
+using namespace std;
+void insertion_sort(int arr[],int n)
+{
+    for(int i=1;i<n;i++)
+    {
+        for(int j=i-1;j>=0;j--)
+        {
+            if(arr[j]>arr[j+1])
+            {
+                swap(arr[j],arr[j+1]);
+            }
+        }
+    }
+    for(int i=0;i<n;i++)
+        {
+            cout<<arr[i]<<" ";
+        }
+}
+int main()
+{
+    int arr[]={2,9,5,1,3};
+    int n=(sizeof(arr)/sizeof(arr[0]));
+    insertion_sort(arr,n);
+}
+----------------------------------------------------------------------------------
+//merging:-
+#include<bits/stdc++.h>
+using namespace std;
+void mergeSortedArray(vector<int>&arr1, vector<int>&arr2, vector<int>&arr3)
+{
+    int i=0;
+    int j=0;
+    while(i<arr1.size() && j<arr2.size())
+    {
+        if(arr1[i]<=arr2[j])
+        {
+            arr3.push_back(arr1[i]);
+            i++;
+        }
+        else 
+        {
+            arr3.push_back(arr2[j]);
+            j++;
+        }
+    }
+    while(i<arr1.size())
+    {
+        arr3.push_back(arr1[i]);
+        i++;
+    }
+    while(j<arr2.size())
+    {
+        arr3.push_back(arr2[j]);
+        j++;
+    }
+}
+int main()
+{
+    vector<int>arr1={1,3,5,7};
+    vector<int>arr2={2,4,6,8};
+    vector<int>arr3;
+    mergeSortedArray(arr1,arr2,arr3);
+    cout<<"Merge sorted array:\n";
+    for(auto it:arr3)
+    {
+        cout<<it<<" ";
+    }
+}
+---------------------------------------------------------------
