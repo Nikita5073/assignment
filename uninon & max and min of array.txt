@@ -1,0 +1,227 @@
+//binarySearch:-
+#include<bits/stdc++.h>
+using namespace std;
+void binarySearch(int arr[],int n,int key,int index,int start,int end)
+{
+    int flag=-1;
+    for(int i=0;i<n;i++)
+    {
+        int mid=(start+end)/2;
+        if(arr[mid]==key)
+        {
+            flag=1;
+            index=mid;
+            break;
+        }
+        else if(arr[mid]>key)
+        {
+            end=mid-1;
+        }
+        else 
+        {
+            start=mid+1;
+        }
+    }
+    if(flag==1)
+    {
+        cout<<"element found at position"<<index<<" ";
+    }
+    else 
+    {
+        cout<<"element not found"<<" ";
+    }
+}
+int main()
+{
+    int arr[]={15,20,25,35,45,55,65};
+    int n=(sizeof(arr)/sizeof(arr[0]));
+    int key=45,index=-1,start=0,end=n-1;
+    binarySearch(arr,n,key,index,start,end);
+}
+------------------------------------------------------------------
+//selection sort:-
+#include<bits/stdc++.h>
+using namespace std;
+void selection_sort(int arr[],int n)
+{
+    int minIndex;
+    for(int i=0;i<n;i++)
+    {
+        minIndex=i;
+        for(int j=i+1;j<n;j++)
+        {
+            if(arr[j]<arr[minIndex])
+            {
+                minIndex=j;
+            }
+        }
+        swap(arr[i],arr[minIndex]);
+    }
+    cout<<"selection sort is:";
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+}
+int main()
+{
+    int arr[]={99,45,76,56,85,25};
+    int n=(sizeof(arr)/sizeof(arr[0]));
+    selection_sort(arr,n);
+}
+------------------------------------------------------------------------------
+//union sort:-
+#include<bits/stdc++.h>
+using namespace std;
+void union_sort(int arr1[],int arr2[],int l1,int l2)
+{
+    int arr3[l1+l2];
+    int k=0;
+    for(int i=0;i<l1;i++)
+    {
+        bool isduplicate=false;
+        for(int j=0;j<k;j++)
+        {
+            if(arr1[i]==arr3[j])
+            {
+                isduplicate=true;
+                break;
+            }
+        }
+        if(!isduplicate)
+        {
+            arr3[k]=arr1[i];
+            k++;
+        }
+    }
+    for(int i=0;i<l2;i++)
+    {
+        bool isduplicate=false;
+        for(int j=0;j<k;j++)
+        {
+            if(arr2[i]==arr3[j])
+            {
+                isduplicate=true;
+                break;
+            }
+        }
+        if(!isduplicate)
+        {
+            arr3[k]=arr2[i];
+            k++;
+        }
+    }
+    for(int k=0;k<(l1+l2);k++)
+    {
+        cout<<arr3[k]<<" ";
+    }
+}
+int main()
+{
+   int arr1[]={1,2,2,5,5,8};
+   int arr2[]={1,4,5,7,7,9,10};
+   int l1=(sizeof(arr1)/sizeof(arr1[0]));
+   int l2=(sizeof(arr1)/sizeof(arr1[0]));
+   union_sort(arr1,arr2,l1,l2);
+   return 0;
+}
+--------------------------------------------------------------------------------------------------------
+//sum of array:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n]={1,2,3,4,5,6};
+    int sum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum=sum+arr[i];
+    }
+    cout<<sum<<" ";
+}
+------------------------------------------------------------------------------------------------
+//maximum of array:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n]={9,6,8,3,57};
+    int max=arr[0];
+    for(int i=0;i<n;i++)
+    {
+        if(max<arr[i])
+        {
+            max=arr[i];
+        }
+    }
+    cout<<max;
+}
+---------------------------------------------------------------------------------------------
+//maximum of array with index(position):-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n]={15,28,55,45,37,8};
+    int max=arr[0],index=-1;
+    for(int i=0;i<n;i++)
+    {
+        if(max<arr[i])
+        {
+            max=arr[i];
+            index=i;
+        }
+    }
+    cout<<"position is "<<index<<"\n";
+    cout<<"maximum element is "<<max<<"\n";
+    
+}
+----------------------------------------------------------------------------------------------
+//minimum of array:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{ c
+    int n;
+    cin>>n;
+    int arr[n]={15,28,55,45,37,8};
+    int min=arr[0];
+    for(int i=0;i<n;i++)
+    {
+        if(min>arr[i])
+        {
+            min=arr[i];
+        }
+    }
+    cout<<"minimum element is "<<min<<"\n";
+    
+}
+-------------------------------------------------------------------------------------
+//minimum of array with index(position):-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n]={20,45,66,35,15,19,18};
+    int min=arr[0],index=-1;
+    for(int i=0;i<n;i++)
+    {
+        if(min>arr[i])
+        {
+            min=arr[i];
+            index=i;
+        }
+    }
+    cout<<"position is "<<index<<"\n";
+    cout<<"minimum element is "<<min<<"\n";
+    
+}
+--------------------------------------------------------------------------------------
