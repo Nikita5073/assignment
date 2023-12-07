@@ -1,0 +1,1541 @@
+1.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    
+    if(n==0)
+    {
+        cout<<"zero";
+    }
+    else if(n<0)
+    {
+        cout<<"negative";
+    }
+    else
+    {
+        cout<<"positive";
+    }
+}
+------------------------------------------------------------------------
+2.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+
+    if(n%2==0)
+    {
+        cout<<"even number";
+    }
+    else 
+    {
+        cout<<"odd number";
+    }
+}
+----------------------------------------------------------------------------
+3.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+
+   if(a>b && a>c)
+   {
+       cout<<a<<" "<<"is maximum"<<endl;
+   }
+   else if(b>a && b>c)
+   {
+       cout<<b<<" "<<"is maximum"<<endl;
+   }
+   else
+   {
+       cout<<c<<" "<<"is maximum"<<endl;
+   }
+}
+--------------------------------------------------------------------------------
+4.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int base,height;
+    cin>>base>>height;
+    
+    float area=(0.5*base*height);
+    cout<<"area of triangle is: "<<area<<endl;
+}
+----------------------------------------------------------------------------
+5.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char ch;
+    cin>>ch;
+    
+    if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+    {
+        cout<<"vowel"<<endl;
+    }
+    else
+    {
+        cout<<"consonant";
+    }
+}
+-----------------------------------------------------------------------------
+6.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int year;
+    cin>>year;
+    
+    if(year%4==0)
+    {
+        cout<<"leap year"<<endl;
+    }
+    else 
+    {
+        cout<<"not a leap year"<<endl;
+    }
+}
+-----------------------------------------------------------------------------
+7.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,c,d;
+    cin>>a>>b>>c>>d;
+
+   if(a>b && a>c && a>d)
+   {
+       cout<<a<<" "<<"is maximum"<<endl;
+   }
+   else if(b>a && b>c && b>d)
+   {
+       cout<<b<<" "<<"is maximum"<<endl;
+   }
+   else if(c>a && c>b && c>d)
+   {
+       cout<<c<<" "<<"is maximum"<<endl;
+   }
+   else
+   {
+       cout<<d<<" "<<"is maximum"<<endl;
+   }
+}
+------------------------------------------------------------------------------------
+8.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+
+   if(a<b && a<c)
+   {
+       cout<<a<<" "<<"is minimum"<<endl;
+   }
+   else if(b<a && b<c)
+   {
+       cout<<b<<" "<<"is minimum"<<endl;
+   }
+   else
+   {
+       cout<<c<<" "<<"is minimum"<<endl;
+   }
+}
+----------------------------------------------------------------------------------
+9.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int score;
+    char grade;
+    cout<<"Enter the student's score: ";
+    cin>>score;
+
+    if(score>=90) 
+    {
+        grade='A';
+    } 
+    else if(score>=80) 
+    {
+        grade = 'B';
+    } 
+    else if(score>=70) 
+    {
+        grade = 'C';
+    } 
+    else if(score>=60) 
+    {
+        grade = 'D';
+    } 
+    else 
+    {
+        grade = 'F';
+    }
+    cout << "The student's letter grade is: " << grade << endl;
+
+    return 0;
+}
+--------------------------------------------------------------------------------------
+10.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    float weight,height,BMI;
+    cin>>weight>>height;
+
+    BMI=weight/(height*height);
+
+    if(BMI<18.5) 
+    {
+        cout<<"The person is underweight"<<endl;
+    } 
+    else if(BMI>=18.5 && BMI<25.0) 
+    {
+        cout<<"The person has a normal weight."<<endl;
+    } 
+    else if(BMI>=25.0 && BMI<30.0) 
+    {
+        cout<<"The person is overweight."<<endl;
+    } 
+    else 
+    {
+        cout<<"The person is obese."<<endl;
+    }
+
+    return 0;
+}
+-----------------------------------------------------------------------------
+11.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int a,b,result;
+    char symbols;
+    cin>>a>>b>>symbols;
+
+    if(symbols == '+') 
+    {
+        result = a+b;
+        cout << "Result: " << result << endl;
+    } 
+    else if(symbols == '-') 
+    {
+        result = a-b;
+        cout << "Result: " << result << endl;
+    } 
+    else if(symbols == '*') 
+    {
+        result = a*b;
+        cout << "Result: " << result << endl;
+    } 
+    else if (symbols == '/') 
+    {
+       result = a/b;
+       cout << "Result: " << result << endl;
+    } 
+    else 
+    {
+        cout << "Error: Invalid symbols." << endl;
+    }
+
+    return 0;
+}
+-------------------------------------------------------------------------------
+12.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int age;
+    cout << "Enter the person's age: ";
+    cin >> age;
+    if (age >= 0 && age < 1) 
+    {
+        cout << "The person is an infant." << endl;
+    } 
+    else if (age >= 1 && age < 13) 
+    { 
+        cout << "The person is a child." << endl;
+    } 
+    else if (age >= 13 && age < 20) 
+    {
+        cout << "The person is a teenager." << endl;
+    } 
+    else if (age >= 20 && age < 65) 
+    {
+        cout << "The person is an adult." << endl;
+    } 
+    else if (age >= 65) 
+    {
+        cout << "The person is a senior." << endl;
+    } else {
+        cout << " Invalid age entered." << endl;
+    }
+
+    return 0;
+}
+--------------------------------------------------------------------------------------
+13.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int Month_Number;
+    cout << "Enter a Month number (1-12): ";
+    cin >> Month_Number;
+    if (Month_Number == 1) 
+    {
+        cout << "January" << endl;
+    }
+    else if (Month_Number == 2) 
+    {
+        cout << "February" << endl;
+    } 
+    else if (Month_Number == 3) 
+    {
+        cout << "March" << endl;
+    } 
+    else if (Month_Number == 4) 
+    {
+        cout << "April" << endl;
+    } 
+    else if (Month_Number == 5) 
+    {
+        cout << "May" << endl;
+    } 
+    else if (Month_Number == 6) 
+    {
+        cout << "June" << endl;
+    } 
+    else if (Month_Number == 7) 
+    {
+        cout << "July" << endl;
+    } 
+    else if (Month_Number == 8) 
+    {
+        cout << "August" << endl;
+    } 
+    else if (Month_Number == 9) 
+    {
+        cout << "September" << endl;
+    } 
+    else if (Month_Number == 10) 
+    {
+        cout << "October" << endl;
+    } 
+    else if (Month_Number == 11) 
+    {
+        cout << "November" << endl;
+    } 
+    else if (Month_Number == 12)
+    {
+        cout << "December" << endl;
+    } 
+    else 
+    {
+        cout << " Invalid month number." << endl;
+    }
+
+    return 0;
+}
+------------------------------------------------------------------------------------
+14.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    double itemPrice, totalCost;
+    int quantity;
+     double DISCOUNT_RATE = 0.1; 
+
+    cout << "Enter the price of one item: ";
+    cin >> itemPrice;
+
+    cout << "Enter the quantity purchased: ";
+    cin >> quantity;
+
+    totalCost = itemPrice * quantity;
+    if (quantity > 10) 
+    {
+        double discountAmount = totalCost * DISCOUNT_RATE;
+        totalCost -= discountAmount;
+        cout << "A 10% discount is applied!" << endl;
+    }
+    cout << "Total cost: " << totalCost << endl;
+
+    return 0;
+}
+-----------------------------------------------------------------------------
+15.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    char choice;
+    double temperature, convertedTemperature;
+
+    cout << "Choose conversion type ('F' for Fahrenheit to Celsius, 'C' for Celsius to Fahrenheit): ";
+    cin >> choice;
+
+    if (choice == 'F' || choice == 'f') 
+    {
+        cout << "Enter temperature in Fahrenheit: ";
+        cin >> temperature;
+        convertedTemperature = (temperature - 32.0) * 5.0 / 9.0;
+        cout << " temperature in Celsius: " << convertedTemperature << " C" << endl;
+    } 
+    else if (choice == 'C' || choice == 'c') 
+    {
+        cout << "Enter temperature in Celsius: ";
+        cin >> temperature;
+        convertedTemperature = (temperature * 9.0 / 5.0) + 32.0;
+        cout << " temperature in Fahrenheit: " << convertedTemperature << " F" << endl;
+    } 
+    else 
+    {
+        cout << "Invalid choice. Please enter 'F' or 'C'." << endl;
+    }
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------
+16.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int creditScore;
+    cin >> creditScore;
+    if (creditScore >= 800) 
+    {
+       cout << "Credit Score: Excellent\n";
+    } 
+    else if (creditScore >= 700) 
+    {
+        cout << "Credit Score: Good\n";
+    } 
+    else if (creditScore >= 600) 
+    {
+        cout << "Credit Score: Fair\n";
+    } 
+    else 
+    {
+        cout << "Credit Score: Poor\n";
+    }
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------
+17.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    char ch;
+    cout<<"Enter the colour for traffic light: "<<endl;
+    cin>>ch;
+    if(ch == 'R') 
+    {
+        cout << "Red Light\n";
+    } 
+    else if(ch == 'Y') 
+    {
+        cout << "Yellow Light\n";
+    } 
+    else 
+    {
+        cout << "Green Light\n";
+    }
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------
+18.question:-
+
+----------------------------------------------------------------------------------------------------------------
+19.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int num;
+    cout<<"Enter the day number: "<<endl;
+    cin>>num;
+    if(num == 1) 
+    {
+        cout << "Monday\n";
+    } 
+    else if(num == 2) 
+    {
+       cout << "Tuesday\n";
+    } 
+    else if(num == 3) 
+    {
+        cout << "Wednesday\n";
+    } 
+    else if(num == 4) 
+    {
+       cout << "Thursday\n";
+    } 
+    else if(num == 5) 
+    {
+        cout << "Friday\n";
+    } 
+    else if(num == 6) 
+    {
+        cout << "Saturday\n";
+    } 
+    else if(num == 7) 
+    {
+        cout << "Sunday\n";
+    } 
+    else {
+        cout << "Invalid day number. Please enter a number between 1 and 7.\n";
+    }
+
+    return 0;
+}
+----------------------------------------------------------------------------------------------------
+20.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int count=1;
+    while(count<=10) 
+    {
+       cout<<count<< " ";
+       count++;
+    }
+    cout<<endl;
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------------
+21.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int num=1;
+    int sum=0;
+    
+    while(num<=100) 
+    {
+        if(num%2==0) 
+        {
+            sum+=num;
+        }
+        num++;
+    }
+    cout<<"Sum of even numbers from 1 to 100: "<<sum<<endl;
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------
+22.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int num;
+    cin>>num;
+    int fact=1;
+    
+    while(num>0) 
+    {
+       fact*=num;
+       num--;
+    }
+    cout<<"factorial is: "<<fact<<endl;
+}
+--------------------------------------------------------------------------------------------------------------
+23.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int num,sum=0,rem;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    while(num != 0) 
+    {
+        rem = num % 10;
+        sum = sum * 10 + rem;
+        num /= 10;
+    }
+    cout << "Reversed Number: " << sum << endl;
+
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------
+24.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int num,digitCount = 0;
+    cout << "Enter an integer: ";
+    cin >> num;
+
+    while (num > 0) 
+    {
+        num /= 10;  
+        digitCount++;
+    }
+   cout << "Number of digits: " << digitCount << endl;
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------
+25.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int n, first = 0, second = 1, next;
+   cout << "Enter the number of terms: ";
+   cin >> n;
+    cout << "Fibonacci Series: ";
+
+    int i = 0;
+    while (i < n) 
+    {
+        if (i <= 1)
+        {
+            next = i;
+        } 
+        else 
+        {
+            next = first + second;
+            first = second;
+            second = next;
+        }
+        cout << next << " ";
+        i++;
+    }
+
+    cout << endl;
+
+    return 0;
+}
+------------------------------------------------------------------------------------------------------
+26.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    for (int i = 1; i <= 10; ++i) 
+    {
+        cout << i << " ";
+    }
+    cout <<endl;
+    return 0;
+}
+-----------------------------------------------------------------------------------------
+27.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    cout << "Even numbers from 1 to 20: ";
+    for (int i = 2; i <= 20; i += 2) 
+    {
+        cout << i << " ";
+    }
+    cout <<endl;
+    return 0;
+}
+--------------------------------------------------------------------------------------------
+28.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int n=50;
+    int sum=0;
+    for (int i = 0; i <= n; i ++) 
+    {
+        sum=sum+i;
+    }
+    cout <<sum;
+    return 0;
+}
+
+---------------------------------------------------------------------------------------
+29.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    cout << "The first 10 natural numbers in reverse order are: ";
+    for (int i = 10; i >= 1; i--) 
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+    return 0;
+}
+-----------------------------------------------------------------------------------------
+30.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int n=5;
+    int fact=1;
+    cout << "factorial is: ";
+    for (int i = 1; i <= 5; i++) 
+    {
+        fact=fact*i;
+    }
+    cout << fact;
+    return 0;
+}
+-----------------------------------------------------------------------------------------
+31.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int n;
+    cout << "Enter the number of terms for Fibonacci series: ";
+    cin >> n;
+    int num1 = 0, num2 = 1;
+    cout << "Fibonacci Series: " << num1 << " " << num2 << " ";
+    for (int i = 2; i < n; i++) 
+    {
+        int nextNum = num1 + num2;
+        cout << nextNum << " ";
+        num1 = num2;
+        num2 = nextNum;
+    }
+    cout << endl;
+    return 0;
+}
+----------------------------------------------------------------------------------
+32.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int number;
+    bool isPrime = true;
+    cout << "Enter a number: ";
+    cin >> number;
+    for (int i = 2; i <= number / 2; i++) 
+    {
+        if (number % i == 0)
+        {
+            isPrime = false;
+            break;
+        }
+    }
+    if (number <= 1 || !isPrime) 
+    {
+        cout << number << " is not a prime number." << endl;
+    } 
+    else 
+    {
+        cout << number << " is a prime number." << endl;
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------------
+33.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int sum = 0;
+    for (int i = 2; i <= 100; i += 2) 
+    {
+        sum += i; 
+    }
+   cout << "Sum of even numbers from 1 to 100: " << sum << endl;
+    return 0;
+}
+-----------------------------------------------------------------------------------
+34.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int number, sum = 0;
+    cout << "Enter a number: ";
+    cin >> number;
+    for (; number != 0; number /= 10) 
+    {
+        sum += number % 10;
+    }
+    cout << "Sum of digits: " << sum << endl;
+    return 0;
+}
+---------------------------------------------------------------------------------------
+35.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int number;
+    cout << "Enter the number for multiplication table: ";
+    cin >> number;
+    cout << "Multiplication Table for " << number << ":\n";
+    for (int i = 1; i <= 10; ++i)
+    {
+        cout << number << " * " << i << " = " << (number * i) << "\n";
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------------
+36.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    for(int i=1;i<=5;i++)
+    {
+        for(int j=1;j<=5;j++)
+        {
+            if(j>=1 && j<=i)
+            {
+                cout<<"*";
+            }
+            else 
+            {
+                cout<<" ";
+            }
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+------------------------------------------------------------------------------------------
+37.question:-
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int sum = 0;
+    for (int i = 2; i <= 100; i += 2) 
+    {
+        sum += i;  
+    }
+    cout << "Sum of even numbers from 1 to 100: " << sum <<endl;
+    return 0;
+}
+-----------------------------------------------------------------------------------------
+38.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class Rectangle
+{
+private:
+    int length;
+    int width;
+
+public:
+    int area;
+    int perimeter;
+    Rectangle()
+    {
+        length=1;
+        width=1;
+    }
+    Rectangle(int length, int width)
+    {
+        this->length=length;
+        this->width=width;
+    }
+    void Area() 
+    {
+        area=length*width;
+    }
+    void printArea()
+    {
+        cout<<"area of rectangle is: "<<area<<endl;
+    }
+    void Perimeter()
+    {
+       perimeter=2*(length+width); 
+    }
+    void printPerimeter()
+    {
+        cout<<"perimeter of rectangle is: "<<perimeter;
+    }
+};
+
+int main() 
+{
+    Rectangle obj(5,6);
+    obj.Area();
+    obj.printArea();
+    obj.Perimeter();
+    obj.printPerimeter();
+}
+--------------------------------------------------------------------------------------------------------
+39.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class BankAccount
+{
+private:
+    double balance;
+
+public:
+    BankAccount()
+    {
+        balance=0.0;
+    }
+    BankAccount(double balance)
+    {
+        this->balance=balance;
+    }
+    void deposit(double amount) 
+    {
+        if (amount > 0) 
+        {
+            balance += amount;
+            cout << "Deposited $" << amount << " successfully.\n";
+        }
+        else 
+        {
+            cout << "Invalid deposit amount.\n";
+        }
+    }
+    void withdraw(double amount)
+    {
+        if (amount > 0 && amount <= balance) 
+        {
+            balance -= amount;
+           cout << "Withdrawn $" << amount << " successfully.\n";
+        } 
+        else
+        {
+           cout << "Invalid withdrawal amount or insufficient funds.\n";
+        }
+    }
+    void checkBalance() 
+    {
+       cout << "Current balance: $" << balance << "\n";
+    }
+};
+
+int main()
+{
+    BankAccount myAccount(10000);
+    myAccount.deposit(1000.0);
+    myAccount.checkBalance();
+
+    myAccount.withdraw(500.0);
+    myAccount.checkBalance();
+
+    myAccount.withdraw(700.0);  
+    myAccount.deposit(200.0); 
+    myAccount.checkBalance();
+
+    return 0;
+}
+--------------------------------------------------------------------------------------------
+40.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class Calculator 
+{
+public:
+    int add(int a,int b) 
+    {
+        return a + b;
+    }
+   int subtract(int a,int b) 
+    {
+        return a - b;
+    }
+    int multiply(int a, int b)
+    {
+        return a * b;
+    }
+
+    int divide(int a, int b) 
+    {
+         return a / b;
+    }
+};
+
+int main()
+{
+    Calculator myCalculator;
+    int num1, num2;
+    cin >> num1 >> num2;
+    cout << "Sum: " << myCalculator.add(num1, num2) << endl;
+    cout << "Difference: " << myCalculator.subtract(num1, num2) << endl;
+    cout << "Product: " << myCalculator.multiply(num1, num2) << endl;
+    cout << "Quotient: " << myCalculator.divide(num1, num2) << endl;
+
+    return 0;
+}
+----------------------------------------------------------------------------------------------
+41.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class ATM
+{
+private:
+    double balance;
+
+public:
+    ATM()
+    {
+        balance=0.0;
+    }
+    ATM(double balance)
+    {
+        this->balance=balance;
+    }
+    void deposit(double amount) 
+    {
+        if (amount > 0) 
+        {
+            balance += amount;
+            cout << "Deposited $" << amount << " successfully.\n";
+        }
+        else 
+        {
+            cout << "Invalid deposit amount.\n";
+        }
+    }
+    void withdraw(double amount)
+    {
+        if (amount > 0 && amount <= balance) 
+        {
+            balance -= amount;
+           cout << "Withdrawn $" << amount << " successfully.\n";
+        } 
+        else
+        {
+           cout << "Invalid withdrawal amount or insufficient funds.\n";
+        }
+    }
+    void checkBalance() 
+    {
+       cout << "Current balance: $" << balance << "\n";
+    }
+};
+
+int main()
+{
+    ATM myAccount(10000);
+    myAccount.deposit(1000.0);
+    myAccount.checkBalance();
+
+    myAccount.withdraw(500.0);
+    myAccount.checkBalance();
+
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------------
+42.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class Shape 
+{
+public:
+    virtual double getArea() const = 0;
+};
+class Circle : public Shape 
+{
+private:
+    double radius;
+
+public:
+    Circle(double r) 
+    {
+        radius=r;
+    }
+
+    double getArea() const override 
+    {
+        return 3.14159 * radius * radius;
+    }
+};
+
+class Rectangle : public Shape 
+{
+private:
+    double length;
+    double width;
+
+public:
+    Rectangle(double l, double w) 
+    {
+        length=l;
+        width=w;
+    }
+    double getArea() const override 
+    {
+        return length * width;
+    }
+};
+
+int main() 
+{
+    Circle circle(5.0);
+    Rectangle rectangle(4.0, 6.0);
+    cout << "Area of Circle: " << circle.getArea() << endl;
+    cout << "Area of Rectangle: " << rectangle.getArea() << endl;
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------------
+43.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class Person 
+{
+protected:
+    string name;
+    int age;
+
+public:
+    Person(string n, int a) 
+    {
+        name=n;
+        age=a;
+    }
+
+    void displayInfo() 
+    {
+        cout << "Name: " << name << ", Age: " << age << endl;
+    }
+};
+
+class Student : public Person 
+{
+private:
+    int studentId;
+
+public:
+   Student(string n, int a, int id) : Person(n, a), studentId(id) {}
+    void displayStudentInfo() 
+    {
+        displayInfo();
+        cout << "Student ID: " << studentId << endl;
+    }
+};
+
+int main() 
+{
+    Student student("John Doe", 20, 123456);
+    student.displayStudentInfo();
+
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------
+44.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class Vehicle 
+{
+protected:
+   string color;
+   string make;
+   string model;
+
+public:
+    Vehicle(string c,string m,string mdl)
+    {
+        color=c;
+        make=m;
+        model=mdl;
+    }
+    void displayInfo() 
+    {
+       cout << "Color: " << color << ", Make: " << make << ", Model: " << model <<endl;
+    }
+};
+class Car : public Vehicle 
+{
+private:
+    int numDoors;
+
+public:
+    Car(string c,string m,string mdl, int doors)
+        : Vehicle(c, m, mdl), numDoors(doors) {}
+
+    void displayCarInfo() 
+    {
+        displayInfo();
+        cout << "Number of doors: " << numDoors << endl;
+    }
+};
+class Motorcycle : public Vehicle 
+{
+private:
+    bool hasSideCar;
+
+public:
+    Motorcycle(string c,string m,string mdl, bool sideCar)
+        : Vehicle(c, m, mdl), hasSideCar(sideCar) {}
+
+    void displayMotorcycleInfo()
+    {
+        displayInfo();
+        cout << "Has sidecar: " << (hasSideCar ? "Yes" : "No") << endl;
+    }
+};
+
+int main()
+{
+    Car myCar("Red", "Toyota", "Camry", 4);
+    Motorcycle myMotorcycle("Black", "Harley-Davidson", "Sportster", true);
+
+    myCar.displayCarInfo();
+    myMotorcycle.displayMotorcycleInfo();
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------
+45.question:-
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+class Employee 
+{
+protected:
+    string name;
+    int employeeId;
+
+public:
+    Employee(string n, int id) : name(n), employeeId(id) {}
+
+    virtual void displayInfo() 
+    {
+       cout << "Name: " << name << "\nEmployee ID: " << employeeId << endl;
+    }
+};
+class Manager : public Employee 
+{
+private:
+   string department;
+
+public:
+    Manager(string n, int id,string dept) : Employee(n, id), department(dept) {}
+
+    void displayManagerInfo() 
+    {
+        displayInfo(); 
+        cout << "Department: " << department << endl;
+    }
+};
+class Clerk : public Employee 
+{
+private:
+    string office;
+
+public:
+    Clerk(string n, int id,string off) : Employee(n, id), office(off) {}
+
+    void displayClerkInfo() 
+    {
+        displayInfo();
+        cout << "Office: " << office << endl;
+    }
+};
+
+int main() 
+{
+    Manager manager("John Doe", 1001, "Sales");
+    Clerk clerk("Jane Smith", 2002, "Reception");
+
+    cout << "Manager Information:\n";
+    manager.displayManagerInfo();
+
+    cout << "\nClerk Information:\n";
+    clerk.displayClerkInfo();
+
+    return 0;
+}
+------------------------------------------------------------------------------------------------
+46.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class Animal
+{
+public:
+    virtual void makeSound()
+    {
+       cout << "Animal makes a generic sound." << endl;
+    }
+};
+class Dog : public Animal 
+{
+public:
+    void makeSound() override 
+    {
+        cout << "Dog barks: Woof! Woof!" << endl;
+    }
+};
+class Cat : public Animal 
+{
+public:
+    void makeSound() override
+    {
+        cout << "Cat meows: Meow! Meow!" << endl;
+    }
+};
+
+int main() 
+{
+    Dog myDog;
+    Cat myCat;
+
+    cout << "Dog says: ";
+    myDog.makeSound();
+
+    cout << "Cat says: ";
+    myCat.makeSound();
+
+    return 0;
+}
+--------------------------------------------------------------------------------------
+47.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class BankAccount 
+{
+protected:
+    int accountNumber;
+    double balance;
+
+public:
+    BankAccount(int accNumber, double initialBalance) : accountNumber(accNumber), balance(initialBalance) {}
+
+    virtual void displayAccountInfo() const 
+    {
+        cout << "Account Number: " << accountNumber << "\nBalance: $" << balance << endl;
+    }
+    virtual void performCommonTransaction(double amount) {
+     
+    }
+    
+    virtual ~BankAccount() {}
+};
+class SavingsAccount : public BankAccount {
+public:
+    SavingsAccount(int accNumber, double initialBalance) : BankAccount(accNumber, initialBalance) {}
+
+    void calculateInterest() 
+    {
+        double interestRate = 0.05; 
+        double interest = balance * interestRate;
+        balance += interest;
+        cout << "Interest calculated. New balance: $" << balance << endl;
+    }
+    void displayAccountInfo() const override 
+    {
+        cout << "Savings Account Information\n";
+        BankAccount::displayAccountInfo();
+    }
+};
+
+class CheckingAccount : public BankAccount
+{
+public:
+    CheckingAccount(int accNumber, double initialBalance) : BankAccount(accNumber, initialBalance) {}
+
+    void deductMonthlyFee() 
+    {
+        double monthlyFee = 5.0;
+        balance -= monthlyFee;
+        cout << "Monthly fee deducted. New balance: $" << balance << endl;
+    }
+    void displayAccountInfo() const override 
+    {
+        cout << "Checking Account Information\n";
+        BankAccount::displayAccountInfo();
+    }
+};
+
+int main() 
+{
+    SavingsAccount savings(1001, 1000.0);
+    CheckingAccount checking(2001, 1500.0);
+
+    savings.displayAccountInfo();
+    checking.displayAccountInfo();
+
+    savings.calculateInterest();
+    checking.deductMonthlyFee();
+
+    savings.displayAccountInfo();
+    checking.displayAccountInfo();
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------
+48.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class Shape 
+{
+protected:
+    double width;
+    double height;
+
+public:
+    Shape(double w, double h) : width(w), height(h) {}
+    virtual void calculateArea() = 0;
+};
+class Triangle : public Shape 
+{
+public:
+    Triangle(double base, double height) : Shape(base, height) {}
+    void calculateArea() override 
+    {
+        double area = 0.5 * width * height;
+        cout << "Area of Triangle: " << area << endl;
+    }
+};
+class Rectangle : public Shape 
+{
+public:
+    Rectangle(double width, double height) : Shape(width, height) {}
+
+    void calculateArea() override 
+    {
+        double area = width * height;
+       cout << "Area of Rectangle: " << area << endl;
+    }
+};
+
+int main() 
+{
+    Triangle triangle(5.0, 8.0);
+    Rectangle rectangle(4.0, 6.0);
+
+    triangle.calculateArea();
+    rectangle.calculateArea();
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------
+49.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class Employee
+{
+protected:
+    string name;
+    double salary;
+
+public:
+    Employee(string n, double s) : name(n), salary(s) {}
+
+    virtual void calculateBonus() const = 0;
+
+    void displayDetails() 
+    {
+        cout << "Name: " << name << "\nSalary: $" << salary << endl;
+    }
+};
+class Manager : public Employee 
+{
+public:
+    Manager(string n, double s) : Employee(n, s) {}
+
+    void calculateBonus()  const override 
+    {
+        double bonus = 0.1 * salary;
+        cout << "Bonus for Manager: $" << bonus <<endl;
+    }
+};
+
+class Clerk : public Employee 
+{
+public:
+    
+    Clerk(string n, double s) : Employee(n, s) {}
+    void calculateBonus() const override {
+        double bonus = 0.05 * salary;
+        cout << "Bonus for Clerk: $" << bonus << endl;
+    }
+};
+
+int main() 
+{
+    Manager manager("John Manager", 50000.0);
+    Clerk clerk("Alice Clerk", 30000.0);
+
+    manager.displayDetails();
+    manager.calculateBonus();
+
+    std::cout << "\n";
+
+    clerk.displayDetails();
+    clerk.calculateBonus();
+
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------
+50.question:-
+#include<bits/stdc++.h>
+using namespace std;
+class Fruit 
+{
+protected:
+   string name;
+    string color;
+
+public:
+    Fruit(string n, string c) : name(n), color(c) {}
+
+    void displayInfo() 
+    {
+        cout << "Name: " << name << ", Color: " << color << endl;
+    }
+};
+class Apple : public Fruit
+{
+public:
+    Apple() : Fruit("Apple", "Red") {}
+};
+class Banana : public Fruit
+{
+public:
+    Banana() : Fruit("Banana", "Yellow") {}
+};
+
+int main() 
+{
+    Apple apple;
+    Banana banana;
+
+    cout << "Information about Apple:" << endl;
+    apple.displayInfo();
+
+    cout << "\nInformation about Banana:" << endl;
+    banana.displayInfo();
+
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------------
